@@ -1,0 +1,8 @@
+package org.lfrank;
+
+public class VogalRemove {
+
+    public String vogalRemove(String str) {
+        return str.replaceAll("(?i)[aeiou]", "");
+    }
+}

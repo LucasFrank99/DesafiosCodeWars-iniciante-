@@ -1,0 +1,15 @@
+package org.lfrank;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class WordSpinTest {
+
+    @Test
+    public void spinner() {
+
+
+        assertEquals("emoclew ELOKIN", new WordSpin().wordSpin("welcome NIKOLE"));
+    }
+}

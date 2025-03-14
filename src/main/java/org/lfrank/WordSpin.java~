@@ -1,0 +1,19 @@
+package org.lfrank;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class WordSpin {
+
+    public String wordSpin(String word) {
+        String[] words = word.split(" ");
+
+        for( int i = 0; i < words.length; i++) {
+            if( words[i].length() >= 5) {
+                words[i] = new StringBuilder(words[i]).reverse().toString();
+            }
+        }
+
+        return String.join(" ", words);
+    }
+
+}
